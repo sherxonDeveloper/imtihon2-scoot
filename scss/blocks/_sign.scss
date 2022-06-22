@@ -1,0 +1,42 @@
+.sign {
+    margin-top: 104px;
+    padding: 102px 0;
+    background: #495567;
+    
+    &__beg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__heading {
+        max-width: 441px;
+        font-family: 'Space Mono';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__img-link {
+        margin-right: 18px; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sign__beg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sign__list {
+        margin-top: 40px;
+    }
+}

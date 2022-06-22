@@ -1,0 +1,235 @@
+// @media only screen and (max-width:1100px) {
+//     .step__conteiner {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: 100%;
+//     }
+
+//     .step-list {
+//         display: flex;
+//         justify-content: right;
+//         align-items: center;
+//         flex-direction: column;
+//         flex-wrap: wrap;
+//         width: 100%;
+
+//         &__item {
+//             max-width: 573px;
+//         }
+
+//         &__item__wrapper {
+//             padding-left: 100px;
+//         }
+
+//         &__item__wrapper::after {
+//             position: absolute;
+//             left: calc(50% - 560px);
+//             transform: rotate(90deg) translate(-50%, -50%);
+//         }
+
+//         &__item__wrapper::before {
+//             position: absolute;
+//             left: calc(50% - 360px);
+//         }
+
+//         .step1::before {
+//             background-image: url("./../../images/li-1.svg");
+//         }
+
+//         .step2::before {
+//             background-image: url("./../../images/li-2.svg");
+//         }
+
+//         .step3::before {
+//             background-image: url("./../../images/li-3.svg");
+//         }
+
+
+
+//     }
+
+
+// }    
+
+// @media only screen and (max-width:950px) {
+//     .telemetry {
+//         &-list {
+//             display: flex;
+//             flex-direction: column;
+//             flex-wrap: wrap;
+//             gap: 150px;
+    
+//             &__item {
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: space-between;
+//                 flex-direction: column;
+//             } 
+    
+//         }
+    
+//         &__left {
+//             order: 1;
+//         }
+    
+//         &__left__heading {
+//             font-size: 48px;
+//             line-height: 48px;
+//             letter-spacing: -2.14286px;
+//             color: #495567;
+//         }
+    
+//         &__left-text {
+//             font-size: 15px;
+//             line-height: 25px;
+//             color: #939CAA;
+//         }
+    
+//         &__right {
+//             max-width: 445px;
+    
+//             &__wrapper {
+//                 border-radius: 50%;
+//                 width: 445px;
+//                 height: 445px;
+//                 position: relative;
+//                 box-shadow: 514px 0 0 0 #E5ECF4;
+    
+//                 &__img {
+//                     position: absolute;
+//                     width: 445px;
+//                     height: 445px;
+//                     border-radius: 50%;
+//                 }
+//             }
+    
+//             &__wrapper::before {
+//                 content: url("./../../images/telemetry-arrow-left.svg");
+//                 display: inline-block;
+//                 position: absolute;
+//                 left: calc(50% - 350px);
+//                 bottom: 0;
+//                 width: 741px;
+//                 height: 150px;
+//                 z-index: 5;
+//             }
+//         }
+//     }
+
+// }
+// @media only screen and (max-width:768px) {
+
+
+//     .telemetry {
+//         &-list {
+//             display: flex;
+//             justify-content: space-between;
+//             flex-direction: column;
+
+//             &__item {
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: space-between;
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (max-width:768px) {
+
+//     .hero__text::after, .hero__text::before {
+//         display: none;
+//     }
+
+//     .hero__wrapper {
+//         padding-bottom: 300px;
+//         margin-right: auto;
+//         margin-left: auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         text-align: center;
+//         padding-top: 137px;
+//     }
+
+//     .hero__inner__wrapper {
+//         margin-left: 0;
+//     }
+
+
+//     .hero__wrapper::after {
+//         content: "";
+//         display: inline-block;
+//         position: absolute;
+//         top: calc(50% + 350px);
+//         left: calc(50% - 510px);
+//         width: 450px;
+//         height: 150px;
+//         background: url("./../../images/hero-arrow.svg") no-repeat;
+//     }
+
+
+//     .step-list {
+//         display: flex;
+//         justify-content: space-between;
+//         flex-direction: column;
+//         align-items: center;
+
+//         &__item {
+//             text-align: center;
+//             position: relative;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             max-width: 311px;
+//             width: 100%;
+//             margin-bottom: 48px;
+//             padding-top: 80px;
+
+//             &__heading {
+//                 font-size: 20px;
+//                 line-height: 28px;
+
+//             }
+//         }
+
+//         &__item__wrapper {
+//             padding: 0;
+
+//             justify-content: center;
+//             align-items: center;
+//         }
+
+//         &__item__wrapper::after {
+//             @include none;
+//         }
+
+//         &__item__wrapper::before {
+//             width: 56px;
+//             height: 56px;
+//             top: 0;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             background-size: 50%;
+//         }
+//     }
+// }
+
+
+// @media only screen and (max-width:430px) {
+//     .hero__heading {
+//         font-size: 40px;
+//         line-height: 40px;
+//     }
+
+//     .hero__container {
+
+//         background-image: url("./../../images/hero-mobile.jpg");
+//     }
+
+// }
+
+  

@@ -1,0 +1,18 @@
+.button {
+    background-color: #FCB72B;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 180px; 
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 14px 39px;
+    transition: all 0.2s ease; 
+}
+
+.button:hover {
+    color: #FCB72B;
+    background: #fff;
+    box-shadow: 0 0 0 3px #FCB72B inset;
+
+}

@@ -1,0 +1,181 @@
+.step{
+    margin-bottom: 175px;
+}
+.step-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &__item {
+        position: relative; 
+        display: flex;
+        justify-content: space-between;
+        max-width: 350px;
+        width: 100%;
+        
+    }
+    
+    &__item__wrapper::after {
+        
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        width: 486px;
+        height: 15px;
+        background-color: #E5ECF4;
+        margin-top: 48px;
+        transform: translate(-100%,-50%);
+        z-index: -1;
+    }
+    
+    &__item__wrapper::before {
+        content: "";
+        display: inline-block;
+        top: 0;
+        margin-bottom: 40px;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: #FCB72B;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .step1::before {
+        background-image: url("./../../images/li-1.svg");
+    }
+    
+    .step2::before {
+        background-image: url("./../../images/li-2.svg");
+    }
+    
+    .step3::before {
+        background-image: url("./../../images/li-3.svg");
+    }
+    
+    &__item { 
+        margin-bottom: 40px;
+        
+        &__text {
+            font-family: 'Lexend Deca';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+        
+        &__heading {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: #495567;
+            margin-bottom: 27px;
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .step__conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .step-list {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        &__item {
+            max-width: 573px;
+        }
+        
+        &__item__wrapper {
+            padding-left: 100px;
+        }
+        
+        &__item__wrapper::after {
+            position: absolute;
+            left: calc(50% - 560px);
+            transform: rotate(90deg) translate(-50%, -50%);
+        }
+        
+        &__item__wrapper::before {
+            position: absolute;
+            left: calc(50% - 360px);
+        }
+        
+        .step1::before {
+            background-image: url("./../../images/li-1.svg");
+        }
+        
+        .step2::before {
+            background-image: url("./../../images/li-2.svg");
+        }
+        
+        .step3::before {
+            background-image: url("./../../images/li-3.svg");
+        }
+        
+        
+        
+    }
+    
+    
+}
+
+
+@media only screen and (max-width:768px) {
+    .step-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        
+        &__item {
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 311px;
+            width: 100%;
+            margin-bottom: 48px;
+            padding-top: 80px;
+            
+            &__heading {
+                font-size: 20px;
+                line-height: 28px;
+                
+            }
+        }
+        
+        &__item__wrapper {
+            padding: 0;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__item__wrapper::after {
+            @include none;
+        }
+        
+        &__item__wrapper::before {
+            width: 56px;
+            height: 56px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-size: 50%;
+        }
+    }
+}
+

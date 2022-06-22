@@ -1,0 +1,56 @@
+/* GENERAL */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Space Mono" , "Lexend Deca";
+    font-style: normal;
+    font-size: 16px;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  button{
+    border: 0;
+  } 
+  .header__btn {
+    background: #FCB72B;
+    border:0;
+    padding: 14px 39px;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  .header__btn:hover {
+    background-color: #FFFFFF;
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+  }
